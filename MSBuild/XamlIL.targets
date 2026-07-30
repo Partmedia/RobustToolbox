@@ -19,6 +19,7 @@
     <ProjectReference Include="$(MSBuildThisFileDirectory)\..\Robust.Client.Injectors\Robust.Client.Injectors.csproj" ReferenceOutputAssembly="false">
       <SetConfiguration Condition="'$(Configuration)' == 'DebugOpt'">Configuration=Debug</SetConfiguration>
       <SetConfiguration Condition="'$(Configuration)' == 'Tools'">Configuration=Release</SetConfiguration>
+      <GlobalPropertiesToRemove>RuntimeIdentifier;RestoreRuntimeIdentifier</GlobalPropertiesToRemove>
     </ProjectReference>
   </ItemGroup>
 
